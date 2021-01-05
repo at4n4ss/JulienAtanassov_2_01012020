@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  color: #0065fc;
+}
+
+<style type="text/css" > a.liens:link {
+  text-decoration: none;
+}
+</style > footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apropos {
+  display: flex;
+  align-items: baseline;
+}
+.noshebergements {
+  display: flex;
+  align-items: center;
+}
+
+.assistance {
+  display: flex;
+  align-items: flex-end;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-Italic-VariableFont_wght") format("ttf"),
+    url("Raleway-VariableFont_wght") format("ttf");
+}
