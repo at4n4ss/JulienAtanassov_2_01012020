@@ -1,21 +1,22 @@
+
+
 header {
   display: flex;
   justify-content: space-between;
 }
-
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
 .menu {
   display: flex;
   list-style: none;
   color: #0065fc;
 }
 
-<style type="text/css" > a.liens:link {
-  text-decoration: none;
-}
-</style > footer {
-  display: flex;
-  justify-content: space-between;
-}
+
+
 
 .apropos {
   display: flex;
@@ -31,8 +32,14 @@ header {
   align-items: flex-end;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url("Raleway-Italic-VariableFont_wght") format("ttf"),
-    url("Raleway-VariableFont_wght") format("ttf");
+.p1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  @font-face {
+    font-family: "Raleway";
+    src: url("Raleway-Italic-VariableFont_wght") format("ttf"),
+      url("Raleway-VariableFont_wght") format("ttf");
 }
