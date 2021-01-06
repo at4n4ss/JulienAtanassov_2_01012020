@@ -1,48 +1,42 @@
-
-
-
+.container {
+  width: 60%;
+  margin: auto;
+}
 
 header {
   display: flex;
-  justify-content: space-between;
-  text-align: right;
 }
+
+.logo {
+  width: 60%;
+}
+.nav {
+  width: 40%;
+}
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+.conainter2 {
+  width: 70%;
+}
+
 footer {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
 }
-.menu {
-  display: flex;
-  list-style: none;
-  color: #0065fc;
-}
-
-
-
 
 .apropos {
-  display: flex;
-  align-items: baseline;
+  width: 33%;
 }
 .noshebergements {
-  display: flex;
-  align-items: center;
+  width: 33%;
 }
-
 .assistance {
-  display: flex;
-  align-items: flex-end;
-}
-
-.p1 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-main {
-  @font-face {
-    font-family: "Raleway";
-    src: url("Raleway-Italic-VariableFont_wght") format("ttf"),
-      url("Raleway-VariableFont_wght") format("ttf");  
+  width: 33%;
 }
