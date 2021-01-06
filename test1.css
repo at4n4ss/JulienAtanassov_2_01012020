@@ -1,8 +1,11 @@
 
 
+
+
 header {
   display: flex;
   justify-content: space-between;
+  text-align: right;
 }
 footer {
   display: flex;
@@ -41,5 +44,5 @@ main {
   @font-face {
     font-family: "Raleway";
     src: url("Raleway-Italic-VariableFont_wght") format("ttf"),
-      url("Raleway-VariableFont_wght") format("ttf");
+      url("Raleway-VariableFont_wght") format("ttf");  
 }
