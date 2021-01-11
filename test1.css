@@ -1,12 +1,11 @@
+/* header */
 .container {
   width: 60%;
   margin: auto;
 }
-
 header {
   display: flex;
 }
-
 .logo {
   width: 60%;
 }
@@ -19,24 +18,50 @@ li {
   padding: 0;
   margin-left: 20px;
 }
-
+.pintro {
+  font-size: large;
+  font-weight: bold;
+}
 a:link {
   text-decoration: none;
 }
-.conainter2 {
-  width: 70%;
+#nav {
+  color: #0065fc;
+  font-weight: bold;
 }
-
+/* footer */
+.container2 {
+  width: 60%;
+}
 footer {
   display: flex;
+  justify-content: space-between;
 }
-
 .apropos {
-  width: 33%;
+  text-align: left;
 }
 .noshebergements {
-  width: 33%;
+  text-align: center;
 }
 .assistance {
-  width: 33%;
+  text-align: right;
+}
+
+/* Police du site */
+@font-face {
+  /* Définition d'une nouvelle police nommée Raleway */
+  font-family: "Raleway";
+  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-Italic-VariableFont_wght")
+    format("ttf");
+  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-VariableFont_wght")
+    format("ttf");
+}
+
+* /* Utilisation de la police qu'on vient de définir sur l'ensemble du site*/ {
+  font-family: "Raleway", Arial, serif;
+}
+
+/* On travaille sur la balise body, donc sur TOUTE la page */
+body {
+  background-color: #f2f2f2; /* couleur fond de page */
 }
