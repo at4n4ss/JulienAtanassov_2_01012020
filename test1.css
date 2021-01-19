@@ -1,16 +1,47 @@
-/* header */
-.container {
-  width: 60%;
-  margin: auto;
+/* Police du site */
+@font-face {
+  /* Définition d'une nouvelle police nommée Raleway */
+  font-family: "Raleway";
+  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-Italic-VariableFont_wght")
+    format("ttf");
+  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-VariableFont_wght")
+    format("ttf");
 }
+* /* Utilisation de la police qu'on vient de définir sur l'ensemble du site*/ {
+  font-family: "Raleway", Arial, serif;
+}
+
+body {
+
+}
+.container{
+  width: 70%;
+  margin: auto;
+
+}
+/* entête du site */
 header {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .logo {
   width: 60%;
 }
-.nav {
+
+.menunav {
   width: 40%;
+  padding-top: 15px;
+}
+.menunav li {
+  display: inline;
+  color: #0065fc;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: right;
+}
+.menunav li:hover {
+  border-top: 2px #0065fc solid;
 }
 li {
   list-style-type: none;
@@ -18,24 +49,230 @@ li {
   padding: 0;
   margin-left: 20px;
 }
+a:link {
+  text-decoration: none;
+}
+
+/* texte intro */
+#entete span {
+  font-size: medium;
+}
+#entete p {
+  font-size: small;
+}
 .pintro {
   font-size: large;
   font-weight: bold;
 }
-a:link {
-  text-decoration: none;
+
+/*bouton recherche*/ 
+.search-icon{
+  padding: 15px 20px 15px 20px;
+  background-color: #F4F0EF;
+  border-radius: 10px 0 0 10px;
 }
-#nav {
-  color: #0065fc;
+.search{
+  padding: 15px;
+  border:#F4F0EF solid 1px;
+  margin-left: -5px;
+  width: 250px;;
+
+}
+.submit{
+  padding: 15px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  margin-left: -5px;
+}
+
+/* filtres */ 
+.filtres p {
   font-weight: bold;
 }
-/* footer */
-.container2 {
+.filtres {
+  display: flex;
+  font-weight: bold;
+}
+.filtres li {
+  display: inline;
+ 
+}
+.iconmoney {
+  padding: 10px;
+  background-color: #DEEBFF;
+  border-radius: 30px 30px 30px 30px;
+  color: #0065FC;
+}
+.economique {
+border: 2px solid #F4F0EF ;
+border-left: none;
+border-radius: 0px 20px 20px 0px; 
+margin-left: -10px;
+padding: 10px ;
+margin-right: 10px;
+}
+
+.iconfamily {
+  padding: 10px;
+  background-color: #DEEBFF;
+  border-radius: 30px 30px 30px 30px;
+  color: #0065FC;
+  
+}
+.familial {
+  border: 2px solid #F4F0EF ;
+border-left: none;
+border-radius: 0px 20px 20px 0px; 
+margin-left: -10px;
+padding: 10px ;
+margin-right: 10px;
+}
+
+.iconcoeur {
+  padding: 10px;
+  background-color: #DEEBFF;
+  border-radius: 30px 30px 30px 30px;
+  color: #0065FC;
+}
+.romantique {
+  border: 2px solid #F4F0EF ;
+border-left: none;
+border-radius: 0px 20px 20px 0px; 
+margin-left: -10px;
+padding: 10px ;
+margin-right: 10px;
+}
+.animaux {
+  border: 2px solid #F4F0EF ;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px; 
+  margin-left: -10px;
+  padding: 10px ;
+  margin-right: 10px;
+}
+
+.info {
+  display: inline;
+  color: lightgray;
+}
+.iconinfo {
+  color: #0065FC;
+  background-color: white;
+}
+.container1{
+  background-color: gray;
+}
+#hebergementsmarseille{
+  display: flex;
+width: 60%;
+height: 300px;
+}
+.block1 {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+}
+img { 
+  max-block-size: 0ch;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+/*
+
+a:focus {
+  color: gray;
+}
+
+
+
+.container1 {
+  display: flex;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+#hebergementsmarseille {
+  display: flex;
   width: 60%;
+  height: 500px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px / 10px;
+  margin: auto;
+  margin-right: 20px;
+}
+
+#populaires {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  height: 500px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px / 10px;
+  flex-direction: column;
+}
+.block1 {
+  display: flex;
+}
+#activitesmarseille {
+  display: flex;
+  padding-left: 50px;
+  margin: 20px;
+}
+
+/*
+.recherche {
+  display: flex;
+  justify-content: flex-start;
+}
+form {
+  width: 30%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+}
+.search {
+  width: 100%;
+}
+.submit {
+  width: 110px;
+  background-color: #1c87c9;
+  color: #ffffff;
+}
+
+
+.container2 {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+  align-items: flex-start;
 }
 footer {
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-around;
+  margin: auto;
 }
 .apropos {
   text-align: left;
@@ -46,22 +283,6 @@ footer {
 .assistance {
   text-align: right;
 }
-
-/* Police du site */
-@font-face {
-  /* Définition d'une nouvelle police nommée Raleway */
-  font-family: "Raleway";
-  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-Italic-VariableFont_wght")
-    format("ttf");
-  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-VariableFont_wght")
-    format("ttf");
-}
-
-* /* Utilisation de la police qu'on vient de définir sur l'ensemble du site*/ {
-  font-family: "Raleway", Arial, serif;
-}
-
-/* On travaille sur la balise body, donc sur TOUTE la page */
-body {
-  background-color: #f2f2f2; /* couleur fond de page */
+img {
+  max-width: 50%;
 }

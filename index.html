@@ -1,89 +1,114 @@
 <DOCTYPE html>
 <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <title>Reservia</title>
-    <meta name="Reservia" content="Le meilleur site pour trouver vos vacances de rêve">
-    <link rel="stylesheet" href="test1.css">
-    </head>
+<head>
+<meta charset="UTF-8">
+<title>Reservia</title>
+<meta name="Reservia" content="Le meilleur site pour trouver vos vacances de rêve">
+<link rel="stylesheet" href="test1.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/1318b0ab4b.js"></script>
+</head>
 
-    <body>
-        <div class="container">
-            <header>
-                <div class="logo"> 
-                    <img src="file:///C:/Users/Julien/Documents/$ppp/Openclassroom/Reservia/Projet%202%20-%20Reservia/images/logo/Reservia.svg" alt="" />
-                </div> 
-
-                    <nav id="nav"></nav>
-                        <li class="menu"></li><a class="liens" href="hebergements.html">Hébergements</a>
-                        <li class="menu"></li><a href="activites.hmtl">Activités</a></li>
-                        <li class="menu"></li><a href="sinscrire.html">S'inscrire</a></li>
-                    </nav>
-            </header>
-    
-
-
-
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="file:///C:/Users/Julien/Documents/$ppp/Openclassroom/Reservia/Projet%202%20-%20Reservia/images/logo/Reservia.svg" alt="" />
+            </div> 
+            <nav class="menunav">
+                <li class="menu"><a href="hebergements.html">Hébergements</a></li>
+                <li class="menu"><a href="activites.hmtl">Activités</a></li>
+                <li class="menu"><a href="sinscrire.html">S'inscrire</a></li>
+            </nav>
+        </header>
         <main>
-            <section id="entete">
-                <p><span class="pintro"> Trouvez votre hébergement pour des vacances de rêve</span> <br>
-                En plein centre ville ou en pleine nature </p><br>
-                
-            </section>
+                <section id="entete">
+                    <p><span class="pintro"> Trouvez votre hébergement pour des vacances de rêve</span> <br>
+                    En plein centre ville ou en pleine nature </p><br>        
+                </section>
+        
+                <div class= "recherche" >
+                    <form> 
+                        <div class="form-group">
+                            <span class="search-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <input type="text" name="text" class="search" placeholder="Votre destination de rêve">
+                            <input type="submit" name="submit" class="submit" value="Rechercher">
+                        </div>
+                       
+                    </form>
+                </div>
+    <div class= "filtres">
+        <p>Filtres</p>
+        <ul>
+            <span class= "iconmoney"><i class="fa fa-money" aria-hidden="true"></i></span>
+            <li class= "economique"><a href="">Economique</a></li>
+        <span class="iconfamily"><i class="fa fa-child" aria-hidden="true"></i></span>
+            <li class= "familial"><a href="">Familial</a></li>
+            <span class="iconcoeur"><i class="fa fa-heart" aria-hidden="true"></i></span>
+            <li class= "romantique"><a href="">Romantique</a></li>
+            <span class="icondog"><i class="fas fa-dog"></i></span>
+            <li class= "animaux"><a href="">Animaux autorisés</a></li>   
+        </ul>
 
-            <section id="hebergementsmarseille">
-                <p>Hébergements à Marseille</p>
-                    <nav id="marseille">
-                        <li class="lienshotels"></li><a href="cannebiere.html">Auberge de la Cannebière</a>
-                        <li class="lienshotels"></li><a href="duport.html">Hôtel du port</a>
-                        <li class="lienshotels"></li><a href="lesmouettes.html">Hôtel Les mouettes</a>
-                        <li class="lienshotels"></li><a href="lamer.html">Hôtel de la mer</a>
-                        <li class="lienshotels"></li><a href="lepanier.html">Auberge Le Panier</a>
-                        <li class="lienshotels"></li><a href="chezamina.html">Hôtel chez Amina</a>
-                    </nav>
-            </section>
+    </div>
 
-            <section id="populaires">
-                <p>Les plus populaires</p>
-                    <nav class="populaires">
-                        <li class="lienshotels"></li><a href="soleilmatin.html">Hôtel Le soleil du matin</a>
-                        <li class="lienshotels"></li><a href="coeureau.html">Au coeur de l'eau Chambres d'hôtes</a>
-                        <li class="lienshotels"></li><a href="bleublanc.html">Hôtel Tout bleu et Blanc</a>
-                    </nav>
-            </section>
+    <div class="info">
+        <p><span class="iconinfo"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>Plus de 500 logements sont disponibles pour cette ville</p>
+    </div>
 
-            <section id="activitesmarseille">
-                <p>Activités à Marseille</p>
-                <nav class="activitesmarseille">
-                    <li class="lienshotels"></li><a href="vieuxport.html">Vieux Port</a>
-                    <li class="lienshotels"></li><a href="fortpomegues.html">Fort de Pomègues</a>
-                    <li class="lienshotels"></li><a href="ilesfrieul.html">Îles du Frieul</a>
-                    <li class="lienshotels"></li><a href="parccalanques.html">Parc National des Calanques</a>
-                    <li class="lienshotels"></li><a href="damegarde.html">Notre-Dame-de-la-Garde</a>
-                    <li class="lienshotels"></li><a href="longchamp.html">Parc Longchamp</a>
-                </nav>
-            </section>
+
+
+            <div class="container1">
+                <p>Hébergements à Marseille</p><br> 
+                <section id="hebergementsmarseille">
+                              
+                        <div class="block1"><a href="cannebiere.html"><p>Auberge de la Cannebière</p><img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></a></div>
+                        <div class="block1"><a href="duport.html">Hôtel du port<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\fred-kleber-gTbaxaVLvsg-unsplash.jpg" ></a></div>
+                        <div class="block1"><a href="lesmouettes.html">Hôtel Les mouettes<img src= "C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg" ></a></div>
+                        <div class="block1"><a href="lamer.html">Hôtel de la mer<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg"></a></div>
+                        <div class="block1"><a href="lepanier.html">Auberge Le Panier<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" ></a></div>
+                        <div class="block1"><a href="chezamina.html">Hôtel chez Amina<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" ></a></div>
+                        
+                </section>
+
+                <section id="populaires">
+                    <p>Les plus populaires</p>                 
+                        <div class="block2"><a href="soleilmatin.html">Hôtel Le soleil du matin<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"></a></div>
+                        <div class="block2"><a href="coeureau.html">Au coeur de l'eau Chambres d'hôtes<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg"></a></div>
+                        <div class="block2"><a href="bleublanc.html">Hôtel Tout bleu et Blanc<img src="C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\imagess\images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg"></a></div>
+                        
+                </section>
+            </div>
+                <section id="activitesmarseille">
+                    <p>Activités à Marseille</p>
+                        <div class="block3"><a href="vieuxport.html">Vieux Port</a></div>
+                        <div class="block3"><a href="fortpomegues.html">Fort de Pomègues</a></div>    
+                        <div class="block3"><a href="ilesfrieul.html">Îles du Frieul</a></div>
+                        <div class="block3"><a href="parccalanques.html">Parc National des Calanques</a></div>
+                        <div class="block3"><a href="damegarde.html">Notre-Dame-de-la-Garde</a></div>
+                        <div class="block3"><a href="longchamp.html">Parc Longchamp</a></div>               
+                </section>
         </main>
 
         
-        <div class="container2">
-            <footer>
-                <nav id="apropos">
-                    <li class= >Fonctionnement du site</li>
-                    <li class= >Conditions générales de vente</li>
-                    <li class= >Données et confidentialité</li>
+            <div class="container2">
+                <footer>
+                    <nav id="apropos">
+                        <li class= >Fonctionnement du site</li>
+                        <li class= >Conditions générales de vente</li>
+                        <li class= >Données et confidentialité</li>
+                    </nav>
+                    <nav id="noshebergements">
+                        <li class= >Charte qualité</li>
+                        <li class= >Soumettre votre hôtel</li>
+                    </nav>
+                    <nav id="Assistance">
+                        <li class= >Centre d'aide</li>
+                        <li class= >Nous contacter</li>
                 </nav>
-                <nav id="noshebergements">
-                    <li class= >Charte qualité</li>
-                    <li class= >Soumettre votre hôtel</li>
-                </nav>
-                <nav id="Assistance">
-                <li class= >Centre d'aide</li>
-                <li class= >Nous contacter</li>
-            </nav>
+                </footer>
             </div>
-        </footer>
-        </div>
-    </body>
+           
+    </div>
+</body>
 
 </html>
