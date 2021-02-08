@@ -64,8 +64,10 @@ a:link {
 #entete p {
   font-size: small;
 }
+#entete h1 {
+  font-size: medium;
+}
 .pintro {
-  font-size: large;
   font-weight: bold;
 }
 
@@ -288,6 +290,11 @@ a:link {
   margin-left: 10px;
   margin-bottom: 20px;
 }
+.row3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 
 /* footer */
 footer {
@@ -297,7 +304,7 @@ footer {
   background-color: #f2f2f2;
   display: flex;
 }
-.row2 {
+.rowfooter {
   display: flex;
 
   width: 100%;
@@ -306,4 +313,129 @@ footer {
 }
 .card-footer nav {
   margin-right: 200px;
+}
+.test2 {
+  display: flex;
+}
+.test {
+  border: 1px grey solid;
+  border-radius: 2px;
+  width: 200px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive design*/
+@media screen and (max-width: 480px) {
+  body {
+    width: auto;
+
+    /* header */
+  }
+  .test2 {
+    display: block;
+  }
+  .sinscrire a {
+    color: blue;
+  }
+  .logo img {
+    width: 40%;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .pintro {
+    font-size: 100px;
+  }
+  #entete p {
+    font-size: 20px;
+  }
+  #entete h1 {
+    font-size: 60px;
+  }
+  #entete {
+    padding-left: 30px;
+  }
+  .info {
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .search {
+    width: 70%;
+  }
+
+  /* main cards*/
+  .main-card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  /* populaires card */
+  .card-rigth {
+    width: 100% !important;
+  }
+  .colum {
+    width: 100%;
+  }
+  .card-item2 {
+    width: 100%;
+  }
+  .card-img2 img {
+    width: 100%;
+  }
+  /* hebergements marseille card */
+
+  .card-left {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card-item {
+    width: 100%;
+  }
+
+  /* activités à marseille */
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-big {
+    width: 100%;
+  }
+  .card-small1 {
+    width: 100%;
+    height: 85%;
+  }
+  .card-small1 img {
+    width: 100%;
+    height: 85%;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .card-small3 {
+    width: 100%;
+    height: 100%;
+  }
+  .card-small2 {
+    width: 100%;
+    height: 85%;
+  }
+
+  /* footer */
+  .main-card-footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
