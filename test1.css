@@ -84,7 +84,7 @@ a:link {
   margin-left: -5px;
   width: 250px;
 }
-.submit {
+.bouton {
   padding: 15px;
   border: none;
   background-color: blue;
@@ -95,7 +95,7 @@ a:link {
 
 /* filtres */
 
-.filtres p {
+ul .filtres p {
   font-weight: bold;
 }
 .filtres {
@@ -236,7 +236,7 @@ a:link {
 }
 .card-big img {
   width: 100%;
-  height: 85%;
+  height: 350px;
   border-radius: 20px 20px 0 0;
 }
 .column1 {
@@ -252,38 +252,38 @@ a:link {
 }
 .card-small1 {
   width: 100%;
-  height: 40%;
+  height: 200px;
 
   border-radius: 20px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 .card-small1 img {
   width: 100%;
-  height: 75%;
+  height: 150px;
   border-radius: 20px 20px 0px 0px;
 }
 .card-small2 {
   width: 100%;
-  height: 20%;
+  height: 160px;
   margin-top: 40px;
   border-radius: 20px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 .card-small2 img {
   width: 100%;
-  height: 65%;
+  height: 110px;
   border-radius: 20px 20px 0px 0px;
 }
 .card-small3 {
   width: 100%;
-  height: 30%;
+  height: 180px;
   margin: 0 0px 40px 0px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
   border-radius: 20px;
 }
 .card-small3 img {
   width: 100%;
-  height: 75%;
+  height: 130px;
   border-radius: 20px 20px 0px 0px;
 }
 .bottom-card h4 {
