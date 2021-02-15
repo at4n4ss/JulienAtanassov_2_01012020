@@ -32,6 +32,7 @@ header {
 }
 
 .menunav {
+  display: flex;
   width: 40%;
   padding-top: 15px;
   text-align: right;
@@ -57,7 +58,8 @@ a:link {
 }
 
 /* texte intro */
-
+#entete {
+}
 #entete span {
   font-size: medium;
 }
@@ -87,7 +89,7 @@ a:link {
 .bouton {
   padding: 15px;
   border: none;
-  background-color: blue;
+  background-color: #0065fc;
   color: white;
   border-radius: 0 10px 10px 0;
   margin-left: -5px;
@@ -101,6 +103,8 @@ ul .filtres p {
 .filtres {
   display: flex;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .filtres li {
   display: inline;
@@ -116,8 +120,8 @@ ul .filtres p {
   border: 2px solid #f4f0ef;
   border-left: none;
   border-radius: 0px 20px 20px 0px;
-  margin-left: -10px;
-  padding: 12px;
+  margin-left: 10px;
+  padding: 8px;
   margin-right: 10px;
 }
 
@@ -132,20 +136,23 @@ ul .filtres p {
 }
 
 /* vignettes des hotels */
-
+.stars {
+  color: #0065fc;
+}
 .main-card {
   display: flex;
+  margin-top: 30px;
   margin-bottom: 100px;
   width: 100%;
 }
 .card-left {
-  width: 60%;
+  width: 70%;
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 10px;
 }
 .card-rigth {
-  width: 40%;
+  width: 30%;
   background-color: #f2f2f2;
   padding: 20px;
   margin-left: 2%;
