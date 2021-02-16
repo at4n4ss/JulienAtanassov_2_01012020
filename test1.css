@@ -106,6 +106,7 @@ a:link {
 ul .filtres p {
   font-weight: bold;
 }
+
 .filtres {
   display: flex;
   font-weight: bold;
@@ -129,6 +130,9 @@ ul .filtres p {
   margin-left: 10px;
   padding: 8px;
   margin-right: 30px;
+}
+.filter a {
+  color: black;
 }
 
 /* texte info */
@@ -342,9 +346,8 @@ footer {
 @media screen and (max-width: 480px) {
   body {
     width: auto;
-
-    /* header */
   }
+  /* header */
   .test2 {
     display: block;
   }
@@ -359,10 +362,12 @@ footer {
   .menunav {
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 0px;
   }
   .menu1 {
     display: flex;
     flex-direction: row;
+    margin: 0px;
   }
 
   /* texte intro */
