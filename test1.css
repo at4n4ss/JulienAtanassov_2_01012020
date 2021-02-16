@@ -2,19 +2,20 @@
 @font-face {
   /* Définition d'une nouvelle police nommée Raleway */
   font-family: "Raleway";
-  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-Italic-VariableFont_wght")
-    format("ttf");
-  src: url("C:\Users\Julien\Documents\$ppp\Openclassroom\Reservia\reservia\font\raleway\Raleway-VariableFont_wght")
-    format("ttf");
+  src: url("font\raleway\Raleway-Italic-VariableFont_wght") format("ttf");
+  src: url("font\raleway\Raleway-VariableFont_wght") format("ttf");
 }
 
 * /* Utilisation de la police qu'on vient de définir sur l'ensemble du site*/ {
   font-family: "Raleway", Arial, serif;
 }
-
-body {
+main {
   width: 70%;
   margin: auto;
+}
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 img {
