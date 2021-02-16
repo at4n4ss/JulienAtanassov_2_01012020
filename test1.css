@@ -27,6 +27,9 @@ header {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.menu1 {
+  margin-right: -30px;
+}
 .logo {
   width: 60%;
 }
@@ -38,6 +41,7 @@ header {
   width: 40%;
   padding-top: 15px;
   text-align: right;
+  margin-left: 400px;
 }
 .menunav li {
   display: inline;
@@ -377,9 +381,13 @@ footer {
   #entete {
     padding-left: 30px;
   }
+
+  /*texte info */
   .info {
     display: none;
   }
+
+  /*bouton recherche*/
   form {
     width: 100%;
   }
