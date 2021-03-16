@@ -40,7 +40,7 @@ header {
   text-align: right;
 }
 .logo {
-  width: 60%;
+  margin-top: 20px;
 }
 .sinscrire {
   display: flex;
@@ -49,6 +49,10 @@ header {
 .sinscrire a {
   color: #0065fc;
   font-weight: bold;
+  padding-top: 20px;
+}
+.sinscrire a {
+  border-top: 2px transparent solid;
 }
 .sinscrire a:hover {
   border-top: 2px #0065fc solid;
@@ -57,17 +61,20 @@ header {
   width: 40%;
   display: flex;
   justify-content: space-between;
+  margin-left: 680px;
 }
 .menunav li {
   display: inline;
 
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 20px;
 }
-.menunav a {
+.menu a {
   color: black;
 }
-
+.menunav li {
+  border-top: 2px transparent solid;
+}
 .menunav li:hover {
   border-top: 2px #0065fc solid;
 }
@@ -80,27 +87,26 @@ li {
   padding: 0;
 }
 a:link {
-  text-decoration: none;
+  text-decoration-line: none;
 }
 
 /* texte intro */
-#entete {
-}
-#entete span {
-  font-size: medium;
-}
+
 #entete p {
-  font-size: small;
+  font-size: 14px;
+  margin-top: 5px;
 }
 #entete h1 {
-  font-size: medium;
+  font-size: 19px;
 }
 .pintro {
   font-weight: bold;
 }
 
 /*bouton recherche*/
-
+.recherche {
+  margin-bottom: 30px;
+}
 .search-icon {
   padding: 15px 20px 15px 20px;
   background-color: #f4f0ef;
@@ -113,7 +119,7 @@ a:link {
   width: 250px;
 }
 .bouton {
-  padding: 15px;
+  padding: 16px;
   border: none;
   background-color: #0065fc;
   color: white;
@@ -126,8 +132,9 @@ a:link {
 
 /* filtres */
 
-ul .filtres p {
+.filtres p {
   font-weight: bold;
+  padding-right: 20px;
 }
 
 .filtres {
@@ -148,7 +155,7 @@ ul .filtres p {
 }
 .filter {
   border: 2px solid #f4f0ef;
-  border-left: none;
+
   border-radius: 0px 20px 20px 0px;
   margin-left: 10px;
   padding: 8px;
@@ -164,13 +171,22 @@ ul .filtres p {
 }
 
 /* texte info */
+
 .info {
   display: inline;
   color: lightgray;
 }
+.info p {
+  margin-top: 30px;
+}
 .iconinfo {
   color: #0065fc;
   background-color: white;
+  border-radius: 60%;
+  border: 1px lightgray solid;
+  padding-left: 5px;
+  padding-right: 1px;
+  margin-right: 10px;
 }
 
 /* vignettes des hotels */
@@ -178,9 +194,9 @@ ul .filtres p {
 .logopopu {
   margin-left: 160px;
 }
+
 .greystar {
-  color: lightgray;
-  font-weight: bold;
+  color: #f2f2f2;
 }
 .stars {
   color: #0065fc;
@@ -213,6 +229,7 @@ ul .filtres p {
   background-color: white;
   border-radius: 10px;
   padding: 5px;
+  box-shadow: 1px 1px 45px -5px rgba(0, 0, 0, 0.12);
 }
 .card-img img {
   width: 100%;
@@ -225,13 +242,17 @@ ul .filtres p {
 .card-text {
   padding: 10px;
 }
+.card-text p {
+  padding-top: 10px;
+  font-size: 12px;
+}
+.card-text2 p {
+  padding-top: 10px;
+}
 .card-left h4 {
   font-size: 14px;
   margin-bottom: -5px;
   margin-top: -3px;
-}
-.card-text p {
-  font-size: 12px;
 }
 
 .card-item2 {
@@ -244,6 +265,7 @@ ul .filtres p {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
+  box-shadow: 1px 1px 45px -5px rgba(0, 0, 0, 0.12);
 }
 
 .card-img2 {
@@ -278,8 +300,11 @@ ul .filtres p {
 .bottom-card {
   display: flex;
   width: 100%;
+  margin-top: 10px;
 }
-
+.bottom-card h4 {
+  padding-top: 10px;
+}
 .card-big {
   width: 25%;
   height: 400px;
@@ -303,6 +328,7 @@ ul .filtres p {
   display: flex;
   flex-direction: column;
   width: 25%;
+  justify-content: space-between;
 }
 .card-small1 {
   width: 100%;
@@ -331,7 +357,7 @@ ul .filtres p {
 .card-small3 {
   width: 100%;
   height: 180px;
-  margin: 0 0px 40px 0px;
+
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
   border-radius: 20px;
 }
@@ -357,10 +383,12 @@ footer {
 .main-card-footer {
   background-color: #f2f2f2;
   display: flex;
+  margin-top: 40px;
 }
 .rowfooter {
   display: flex;
-
+  margin-top: 40px;
+  margin-bottom: 20px;
   width: 100%;
 
   justify-content: space-around;
@@ -383,27 +411,47 @@ footer {
     margin: 0;
     padding: 0;
   }
-  .test2 {
-    display: block;
-  }
+
   #entete {
     width: 100%;
   }
   .logo img {
   }
+  .menunav li {
+    padding: 0px 70px 0px 0px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
   .menunav {
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: column-reverse;
     margin-left: 0px;
   }
   .menu1 {
     width: 100%;
+    margin-left: 50px;
+  }
+  .menu {
   }
   .sinscrire {
     width: auto;
+    padding-left: 200px;
+    padding-top: 10px;
   }
-
+  .menunav li {
+    border-bottom: 2px transparent solid;
+  }
+  .menunav li:hover {
+    border-bottom: 2px #0065fc solid;
+  }
+  .menunav li {
+    border-top: none;
+  }
+  .menunav li:hover {
+    border-top: none;
+  }
   /* texte intro */
 
   .pintro {
@@ -418,9 +466,6 @@ footer {
     width: 100%;
     font-size: 25px;
   }
-  #entete {
-    padding-left: 30px;
-  }
 
   /*texte info */
   .info {
@@ -433,10 +478,10 @@ footer {
   }
   .form-group {
     width: 100%;
-    padding-left: 50px;
+    text-align: center;
   }
   .search {
-    width: 40%;
+    width: 60%;
   }
   .rechercher {
     display: none;
@@ -444,13 +489,24 @@ footer {
   .boutonrecherche {
     display: initial;
   }
+  .bouton {
+    margin-left: -20px;
+    border-radius: 10px;
+  }
+  /* Filtres */
   .filtres {
     display: flex;
     flex-wrap: wrap;
   }
-  /* Filtres */
   .filtres ul {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .filter {
+    margin-top: 10px;
   }
   /* main cards*/
   .main-card {
@@ -458,8 +514,22 @@ footer {
     flex-direction: column-reverse;
     width: 100%;
   }
+
   .card-left {
+    width: 110%;
     margin-top: 20px;
+    background-color: white;
+  }
+  .card-intro {
+    padding-left: 20px;
+  }
+  .card-right-intro {
+    margin: 20px 10px 20px 0px;
+  }
+  .logopopu {
+  }
+  .card-item {
+    width: 94%;
   }
   .card-big {
     margin-top: 30px;
@@ -470,30 +540,43 @@ footer {
   /* populaires card */
   .card-rigth {
     width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    padding-bottom: 20px;
   }
   .colum {
     width: 100%;
   }
   .card-item2 {
-    width: 100%;
+    width: 90%;
+    margin: 10px;
   }
   .card-img2 img {
     width: 100%;
   }
   /* hebergements marseille card */
   .card-rigth {
-    padding: 0px;
+    padding-top: 20px;
   }
   .card-left {
     width: 100%;
     padding: 0px;
     flex-direction: column;
+    padding-top: 20px;
   }
   .card-item {
-    width: 100%;
   }
 
   /* activités à marseille */
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-card {
+    width: 95%;
+    margin-left: 7px;
+  }
   .bottom-card img {
     height: 130px;
   }
@@ -504,6 +587,7 @@ footer {
     height: 180px;
   }
   .card-small1 {
+    margin-top: 20px;
     height: 180px;
   }
   .card-small1 img {
@@ -511,11 +595,6 @@ footer {
   }
   .card-small1-img {
     height: 130px;
-    margin-top: 40px;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
   }
 
   .card-big {
@@ -545,8 +624,19 @@ footer {
   }
 
   /* footer */
+  .main-card-footer {
+    margin-top: 40px;
+  }
   .rowfooter {
     display: flex;
     flex-direction: column;
   }
+  .card-footer {
+    padding: 20px;
+  }
+  .card-footer li {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
 }
