@@ -398,7 +398,7 @@ footer {
 }
 
 /* Responsive design*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 699px) {
   body {
     width: 100%;
   }
@@ -469,7 +469,7 @@ footer {
 
   /*texte info */
   .info {
-    display: none;
+    width: 80%;
   }
 
   /*bouton recherche*/
@@ -638,5 +638,55 @@ footer {
     padding: 5px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+@media screen and (min-width: 700px) and (max-width: 1366px) {
+  main {
+    width: 90%;
+    text-align: center;
+  }
+  /* header */
+  .logo {
+    margin-left: -250px;
+  }
+  .menunav {
+    padding: 0 0 0 500px;
+    margin: 0;
+  }
+
+  /* recherche */
+  .form-group {
+    text-align: center;
+  }
+
+  /* Filtres */
+  .filtres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filtres ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .filter {
+    margin-top: 10px;
+  }
+
+  /* mains cards */
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card-rigth {
+    width: 90%;
+    margin-left: 35px;
+    margin-top: 50px;
+  }
+  .card-left {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 35px;
+  }
 }
