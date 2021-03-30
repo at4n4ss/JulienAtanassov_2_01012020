@@ -21,20 +21,19 @@
   </head>
 
   <body>
+    <div class="logo">
+      <img src="ressources/images/logo/Reservia.svg" alt="" />
+    </div>
     <header>
-      <div class="logo">
-        <img src="ressources/images/logo/Reservia.svg" alt="" />
-      </div>
       <nav class="menunav">
         <ul class="menu1">
-          <li class="menu"><a href="#">Hébergements</a></li>
-          <li class="menu"><a href="#">Activités</a></li>
+          <li class="menu"><a href="#card-left">Hébergements</a></li>
+          <li class="menu"><a href="#container-bottom-card">Activités</a></li>
           
         </ul>  
         <div class="sinscrire"><a href="#">S'inscrire</a>
         </div>
-      </nav>
-      
+      </nav>      
     </header>
     <main>
       <section id="entete">
@@ -69,7 +68,7 @@
             <span class="iconfilter">
               <i class="fa fa-money" aria-hidden="true"></i>
             </span>
-            <a href="#">Economique</a>
+            <a href="#">Économique</a>
           </li>
 
           <li class="filter">
@@ -94,15 +93,16 @@
       </div>
 
       <div class="info">
+        <div class="iconinfo">
+          <i class="fas fa-info"></i>
+        </div>
         <p>
-          <span class="iconinfo">
-            <i class="fas fa-info"></i> </span
-          >Plus de 500 logements sont disponibles pour cette ville
+          Plus de 500 logements sont disponibles pour cette ville
         </p>
       </div>
 
       <div class="main-card">
-        <section class="card-left">
+        <section id="card-left">
           <div class="card-intro"><h3>Hébergements à Marseille</h3>
           </div>
           <div class="row">
@@ -117,7 +117,7 @@
               </div>
               <div class="card-text">
                 <h4>Auberge de la Cannebière</h4>
-                <p>Une nuit à partir de 25€</p>
+                <p>Nuit à partir de 25€</p>
                 <span class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -140,7 +140,7 @@
               </div>
               <div class="card-text">
                 <h4>Hôtel du port</h4>
-                <p>Une nuit à partir de 52€</p>
+                <p>Nuit à partir de 52€</p>
                 <span class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -213,7 +213,7 @@
 
               <div class="card-text">
                 <h4>Auberge le panier</h4>
-                <p>Une nuit à partir de 23€</p>
+                <p>Nuit à partir de 23€</p>
                 <span class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -236,7 +236,7 @@
               </div>
               <div class="card-text">
                 <h4>Hôtel chez Amina</h4>
-                <p>Une nuit à partir de 96€</p>
+                <p>Nuit à partir de 96€</p>
                 <span class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -258,11 +258,12 @@
           <div class="colum">
             <div class="card-right-intro">
               <h3>Les plus populaires 
-                <span class="logopopu">
-                  <i class="fas fa-chart-line">
-                  </i>
-                </span>
+                
               </h3>
+              <div class="logopopu">
+                <i class="fas fa-chart-line">
+                </i>
+              </div>
             </div>
             
             <article class="card-item2">
@@ -276,7 +277,7 @@
               </div>
               <div class="card-text2">
                 <h4>Hôtel le soleil du matin</h4>
-                <p>Une nuit à partir de 128€</p>
+                <p>Nuit à partir de 128€</p>
                 <span class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -335,8 +336,8 @@
           </div>
         </section>
       </div>
-
-      <h4>Activités à Marseille</h4>
+<div id="container-bottom-card">
+      <h3>Activités à Marseille</h3>
       <div class="bottom-card">
         <div class="row">
           <article class="card-big">
@@ -424,6 +425,7 @@
           </div>
         </div>
       </div>
+    </div>
     </main>
     <footer>
       <div class="main-card-footer">
