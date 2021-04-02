@@ -24,6 +24,10 @@ body {
 img {
   object-fit: cover;
 }
+
+a {
+  color: black;
+}
 /* entête du site */
 
 header {
@@ -250,6 +254,7 @@ a:link {
   display: flex;
 }
 .card-item a {
+  color: black;
   display: block;
   width: 100%;
   height: 100%;
@@ -301,7 +306,9 @@ a:link {
   margin-top: 25px;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
-
+.card-item2 a {
+  color: black;
+}
 .card-img2 {
   width: 50%;
   height: 100%;
