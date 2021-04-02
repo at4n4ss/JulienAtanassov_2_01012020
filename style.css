@@ -214,9 +214,6 @@ a:link {
 
 /* vignettes des hotels */
 
-.logopopu {
-}
-
 .greystar {
   color: #f2f2f2;
 }
@@ -584,8 +581,7 @@ footer {
   .card-right-intro h3 {
     padding-left: 15px;
   }
-  .logopopu {
-  }
+
   .card-item {
     width: 85%;
     margin-left: 6%;
